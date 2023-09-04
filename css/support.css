@@ -1,0 +1,217 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.navbar{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+    border: none !important;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+#catdrop{
+    display: none !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    animation-name: cd;
+    animation-duration: 0.5s;
+    transform: perspective(600px);
+}
+
+@keyframes cd{
+    0%{
+        transform: translateY(0px);
+        transition: all 0.3s ease;
+    }
+    100%{
+        transform:rotateX(30px);
+        transition: all 0.3s ease;
+    }
+}
+
+#navbarSupportedContent ul li:hover #catdrop{
+    display: flex !important;
+    position: absolute;
+    flex-direction: column;
+}
+#navbarSupportedContent ul li:hover #catdrop li a{
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+#navbarSupportedContent ul li:hover #catdrop li a:hover{
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+#btn-mt{
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+#btn-mt:hover{
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.822);
+
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: 1px solid black!important;
+    outline: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+
+#card1{
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+#card1:hover{
+    background-color: white !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#card1 h3:hover{
+    text-decoration: underline;
+}
+
+
+#card1img{
+    transform: translateY(50px);
+    transition: all 0.3s ease;
+}
+
+#card1:hover #card1img{
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 812px){
+    #secrow{
+        flex-wrap: wrap;
+    }
+}
+#card2:hover{
+    background-color: white !important;
+
+}
+#card2img{
+    transform: translateY(50px);
+    transition: all 0.3s ease;
+}
+
+#card2:hover #card2img{
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+#card2 h3:hover{
+    text-decoration: underline;
+
+}
+
+
+@media only screen and (max-width: 990px){
+    #seccol2{
+        text-align: center !important;
+    }
+
+}
+
+#slidebtn{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px !important;
+}
+
+@media only screen and (max-width: 1240px){
+    #slideone{
+        flex-wrap: wrap !important;
+    }
+}
+#imgcard{
+    transform: translateY(0px);
+    transition: all 0.3s ease;
+}
+#imgcard:hover{
+    transform: translateY(5px);
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 1100px){
+    #imgcol{
+        flex-wrap: wrap !important;
+    }
+
+    #imgcolpara{
+       padding: 0% !important;
+       width: 100vw !important;
+    }
+}
+
+#socialinner{
+    transform: scale(1);
+    transition: all 0.4s ease;
+}
+
+#social{
+    cursor: pointer;
+}
+    
+#social:hover #socialinner{
+    transform: scale(1.6);
+    transition: all 0.4s ease;
+    color: white;
+}
+
+#social:hover{
+    background-color: rgb(33, 92, 255);
+    transition: all 0.4s ease;
+}
+
+#caticoninner{
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+#caticon:hover #caticoninner{
+    transform: translateX(15px);
+    transition: all 0.3s ease;
+}
+
+#browse:hover{
+    text-decoration: underline !important;
+}
+
+
+#cardhover{
+    transform: translateY(0px);
+    transition: all 0.3s ease;
+}
+#cardhover:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+#feedback:focus{
+    box-shadow: none !important;
+    border: 1px solid black !important;
+}
+
+#chevright{
+    transform: translateX(0px);
+    transition: all 0.3s ease;
+}
+
+#buya:hover #chevright{
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+
+}
